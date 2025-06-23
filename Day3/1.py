@@ -4,10 +4,6 @@
 # print(d['name'])
 # print(d[4])
 # print(d[4][2])
-from itertools import count
-from operator import index
-from traceback import print_exc
-
 
 # dict = {}
 # print(dict)
