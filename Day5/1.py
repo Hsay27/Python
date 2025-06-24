@@ -56,9 +56,18 @@ import pandas as pd
 # cols_AB=df.loc[:,'A':'B']
 # print(cols_AB)
 
-df = pd.DataFrame([['a','b'], ['c','d'], ['e','f'], ['g','h']], columns=['col1', 'col2'])
-print(df)
+# df = pd.DataFrame([['a','b'], ['c','d'], ['e','f'], ['g','h']], columns=['col1', 'col2'])
+# print(df)
 
-df.iloc[1:3,0] = ['x','y']
-print(df)
+# df.iloc[1:3,0] = ['x','y']
+# print(df)
 
+df = pd.DataFrame({'A': [1, 2, 3, 4, 5],'B': [4, 5, 6, 7, 8],'C': [9, 10, 11, 12, 0]}, 
+                  index=['r1', 'r2', 'r3', 'r4', 'r5'])
+
+# print(df)
+# result = df[df["C"] != 0]
+# print(result)
+print(df)
+result = df.drop(df.index[2:4])
+print(result)
